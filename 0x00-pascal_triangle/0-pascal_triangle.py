@@ -11,7 +11,7 @@ def pascal_triangle(n):
         for j in range(1, row_number):
             element = pas[row_number - 1][j - 1] + pas[row_number - 1][j]
             row.append(element)
-            row.append(1)
-            pas.append(row)
+        row.append(1)
+        pas.append(row)
             
-            return pas
+    return pas
