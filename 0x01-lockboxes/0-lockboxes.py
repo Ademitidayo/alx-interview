@@ -7,7 +7,7 @@ def canUnlockAll(boxes):
     setofkeys = [0]
     counter = 0
     index = 0
-
+    
     while index < len(setofkeys):
         setkey = setofkeys[index]
         for key in boxes[setkey]:
@@ -15,5 +15,4 @@ def canUnlockAll(boxes):
                 setofkeys.append(key)
                 counter += 1
         index += 1
-
-    return counter == total_boxes - 1
+        return counter == total_boxes - 1
