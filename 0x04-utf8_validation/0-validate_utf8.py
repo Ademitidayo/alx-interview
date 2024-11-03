@@ -2,8 +2,24 @@
 import sys
 
 def validUTF8(data):
-    # Number of bytes left in the current UTF-8 character
-    """mod doc """
+    """
+    Validate if a given dataset represents a valid UTF-8 encoding.
+
+    Parameters:
+        data (list of int): List of integers where each integer is a byte (8 bits).
+
+    Returns:
+        bool: True if data is a valid UTF-8 encoding, else False.
+
+    Raises:
+        TypeError: If data is not a list or elements are not integers.
+
+    Example:
+        >>> validUTF8([197, 130, 1])
+        True
+        >>> validUTF8([235, 140, 4])
+        False
+    """
     num_bytes = 0
     
     # Masks to check leading bits in the byte
