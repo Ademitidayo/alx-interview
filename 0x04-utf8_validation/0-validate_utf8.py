@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" utf8_validator.py"""
 import sys
 
 def validUTF8(data):
