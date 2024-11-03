@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def validUTF8(data):
+    """mod doc """
     num_bytes = 0
     
     # Masks to check leading bits in the byte
