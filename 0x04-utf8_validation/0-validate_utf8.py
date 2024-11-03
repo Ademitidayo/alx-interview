@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+import sys
 
 def validUTF8(data):
+    # Number of bytes left in the current UTF-8 character
     """mod doc """
     num_bytes = 0
     
